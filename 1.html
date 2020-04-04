@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>정보보안 - kali</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1><a href="index.html">정보보안 학습</a></h1>
+  <ol>
+    <li><a href="1.html">kali_metasploit</a></li>
+    <li><a href="2.html">파이썬</a></li>
+    <li><a href="3.html">정보보안기사</a></li>
+  </ol>
+
+  <h2>meaasploit</h2>
+  <h3>2장 - 각종 설정 작업</h3>
+  cat /etc/network/interfaces<br>
+  apt-get install openssh-server<br>
+  <strong>cat /etc/ssh/sshd_config -n | grep <u>PermitRootLogin</u></strong><br>
+  service ssh start<br>
+  update-rc.d ssh enable<br>
+  apt-get install samba smbclient cifs-utils<br>
+  cat /etc/samba/smb.conf<br>
+  iptables -F && iptables -L<br>
+  service smbd restart<br>
+  update-rc.d smbd enable<br>
+  <img src="coding.jpg" width="200">
+  <h4>3장 - 배포판 이해</h4>
+  www.kernel.org // 2020.03기준_v5.5.0.
+  cdimage.debian.org/cdimage/archive/  // 2020.03기준_v10.2
+  www.ubuntu.com/download/desktop  // 2020.03기준_v19.10
+  xubunty.org //v18.04 LTS
+  tools.kali.org/tools-
+  backbox.org  // 2019.07기준_v6.0
+  --------------------------------------------
+  4장 - 버퍼 오버플로우 기법과 메타스플로잇 기초
+  OS취약점 - 버퍼 오버플로우,  Format string( 형식문자영),  Race Condition(경쟁 상대)
+
+  <h1>kali</h1>
+
+</body>
+</html>
